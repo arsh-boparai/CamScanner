@@ -36,7 +36,9 @@ public class CamscannerActivity extends Activity {
         Util.checkDir(DIR_IMAGE);
         Intent intent = this.getIntent();
         String srcUri =  intent.getStringExtra("SRC_URI");
-        String appKey = "QT4CX6fQP6UP8E39Ne1g3DB1";
+
+        int appResId = this.getResources().getIdentifier("camscanner_app_key", "string", this.getPackageName());
+         String appKey = String.valueOf(appResId);
         api = CSOpenApiFactory.createCSOpenApi(this.getApplicationContext(), appKey, null);
         if (api.isCamScannerInstalled()) {
             String timeStamp = new SimpleDateFormat("yyyyMMdd_HHmmss").format(new java.util.Date());
