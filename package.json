@@ -1,0 +1,27 @@
+{
+    "name": "CamScanner",
+    "version": "1.2.3",
+    "description": "Cordova Camscanner Plugin",
+    "cordova": {
+      "id": "cordova-camscanner",
+      "platforms": []
+    },
+    "repository": {
+      "type": "git",
+      "url": "git+https://github.com/arsh-boparai/CamScanner.git"
+    },
+    "keywords": [
+      "cordova",
+      "camscanner",
+      "ecosystem:cordova"
+    ],
+    "author": "CamScanner",
+    "license": "Apache 2.0",
+    "scripts": {
+      "start": "node server.js"
+    },
+    "bugs": {
+      "url": "https://github.com/arsh-boparai/CamScanner/issues"
+    },
+    "homepage": "https://github.com/arsh-boparai/CamScanner#readme"
+  }
